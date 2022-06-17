@@ -15,17 +15,14 @@
 <%--        session.setAttribute("name", "color");--%>
 <%--    }--%>
 <%--%>--%>
-<% if (request.getMethod().equalsIgnoreCase("POST")) {
-    String color = request.getParameter("color").toLowerCase(Locale.ROOT);
-    response.sendRedirect("/view-color");
-}
-%>
+
 <html>
 <head>
     <title>iPick</title>
 </head>
+<body>
     <h1>PICK A COLOR</h1>
-    <form action = "/view-color" method = "POST">
+    <form action = "/view-color.jsp" method = "POST">
         Color: <input type = "text" name = "color">
         <input type = "submit" value = "Submit" />
     </form>
