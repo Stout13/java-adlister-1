@@ -47,6 +47,13 @@
     Password: <input type = "text" name = "password" />
     <input type = "submit" value = "Submit" />
   </form>
+  <h1>Get Pizza</h1>
+  <form action = "/pizza-order.jsp" method = "POST">
+    User: <input type = "text" name = "username">
+    <br />
+    Password: <input type = "text" name = "password" />
+    <input type = "submit" value = "Submit" />
+  </form>
 
 
 </center>
