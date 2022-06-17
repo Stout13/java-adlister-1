@@ -1,4 +1,4 @@
-<jsp:useBean id="color" scope="request" type="PickColorServlet"/>
+
 <%--
   Created by IntelliJ IDEA.
   User: stout
@@ -11,9 +11,13 @@
 <%--<%@ page contentType="text/html" %>--%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:>if (request.getMethod().equalsIgnoreCase("POST")) { </c:>
-    <c:>String color = "${color}";</c:>
-    <c:>session.setAttribute("color", color);</c:>
+<%--<%  if (request.getMethod().equalsIgnoreCase("POST")) {--%>
+<%--        session.setAttribute("name", "color");--%>
+<%--    }--%>
+<%--%>--%>
+<% if (request.getMethod().equalsIgnoreCase("POST")) {
+    String color = request.getParameter("color").toLowerCase(Locale.ROOT);
+    response.sendRedirect("/view-color");
 }
 %>
 <html>
@@ -21,7 +25,7 @@
     <title>iPick</title>
 </head>
     <h1>PICK A COLOR</h1>
-    <form action = "/view-color.jsp" method = "POST">
+    <form action = "/view-color" method = "POST">
         Color: <input type = "text" name = "color">
         <input type = "submit" value = "Submit" />
     </form>

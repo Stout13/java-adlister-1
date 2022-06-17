@@ -1,25 +1,21 @@
-        <html>
-<%@ page import="java.util.Locale" %><%--
-  Created by IntelliJ IDEA.
-  User: stout
-  Date: 6/15/22
-  Time: 2:34 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<%--    }--%>
+<%--%>--%>
+<%--<% String colorHtml = "bgcolor = " + color + "+ \"";%>--%>
 
-
-
-<% String color = null;
-    if (request.getMethod().equalsIgnoreCase("POST")) {
-        color = request.getParameter("color").toLowerCase(Locale.ROOT);
-    }
-%>
-
+<html>
 <head>
     <title>Title</title>
-    </head>
-    <body bgcolor="<%=color%>">
-    </body>
+</head>
+<body <%
+    if (request.getMethod().equalsIgnoreCase("POST")) {
+        String viewColor = (String) session.getAttribute("color");
+        String bodyTag = "bgcolor=" + '<' + "%" + viewColor + " + '%' + '>'";%>
+        <%=bodyTag%>
+        <%}%> >
+<p>LOTS OF STUFF!!!</p>
+</body>
+
 </html>
