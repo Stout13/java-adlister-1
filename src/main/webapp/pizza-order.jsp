@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><!-- TODO: put your title here --></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="/GP1/css/order-pizza.css">
+    <link rel="stylesheet" href="../CSS/order-pizza.css">
     <!-- Latest compiled and minified JavaScript -->
 </head>
 <body>
@@ -26,13 +26,13 @@
         <a>Order online</a>
         <a>Menu</a>
         <a>
-            <form class="navigation" action=""></form>
+            <form class="navigation" action="${pageContext.request.contextPath}/pizza-order" method="POST">
 
             <!--        https://www.wufoo.com/html5/placeholder-attribute/    great example of zip field place holder mixed with
                         a button from
                         css-tricks below in a form-->
 
-            <input id="zip" name="zip" type="text" pattern="[0-9]*" placeholder="Zip Code 12345">
+            <input id="zip-code" class="form-group" name="zip" type="text" pattern="[0-9]*" placeholder="Zip Code 12345">
 
             <!--        https://css-tricks.com/html-for-zip-codes/    great example of zip field mixed with a button from
                         css-tricks below in a form-->
@@ -159,22 +159,25 @@
                     Rich garlic-ey buttery goodness!
                     <!--                                <a href="#" class="btn btn-primary">Go somewhere</a>-->
                 </div>
-                <fieldset class="form-group">
                     <div class="row">
+                        <form>
                         <!--                                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>-->
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="HTsmall" value="option1" checked>
+                                <input class="form-group" type="radio" name="gridRadios" id="HTsmall" value="option1" checked>
                                 <label class="form-check-label" for="HTsmall">
                                     small (10")
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="HTmedium" value="option2">
+                                <input class="form-group" type="radio" name="gridRadios" id="HTmedium" value="option2">
                                 <label class="form-check-label" for="HTmedium">
                                     medium (12")
                                 </label>
                             </div>
+                            <button type="submit"><i class="fa fa-search">SEARCH</i></button>
+                        </div>
+                        </form>
                             <!--                                        <div class="form-check disabled">-->
                             <!--                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>-->
                             <!--                                            <label class="form-check-label" for="gridRadios3">-->
@@ -182,8 +185,6 @@
                             <!--                                            </label>-->
                         </div>
                     </div>
-
-                </fieldset>
             </div>
             <span></span>
             <div class="card-body-header">
@@ -191,18 +192,18 @@
                 With supporting text below as a natural lead-in to additional content.
                 <!--                                <a href="#" class="btn btn-primary">Go somewhere</a>-->
             </div>
-            <fieldset class="form-group">
+        </div>
                 <div class="row">
                     <!--                                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>-->
                     <div class="col-sm-10">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="CTmedium" value="option1" checked>
+                            <input class="form-group" type="radio" name="gridRadios" id="CTmedium" value="option1" checked>
                             <label class="form-check-label" for="CTmedium">
                                 medium (12")
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="CTlarge" value="option2">
+                            <input class="form-group" type="radio" name="gridRadios" id="CTlarge" value="option2">
                             <label class="form-check-label" for="CTlarge">
                                 large (12")
                             </label>
@@ -217,11 +218,14 @@
                 </div>
             </fieldset>
         </div>
-        </div>
-    </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>--%>
+<%--    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>--%>
 </div>
+    </div>
+</div>
+
 <!-- Main page content -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

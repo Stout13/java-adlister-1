@@ -1,5 +1,4 @@
 import javax.servlet.*;
-import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
@@ -11,13 +10,16 @@ public class ViewColorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
 //        protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+//        session.getAttribute("color", color);
+//        request.getRequestDispatcher("/hello.jsp").forward(request, response);
 
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
 
-        if (request.getMethod().equalsIgnoreCase("POST")) {
+//        if (request.getMethod().equalsIgnoreCase("POST")) {
+//            request.getRequestDispatcher("/view-color.jsp").forward(request, response);
 //            String color = session.getAttribute("color");
             // if the name is null, it means that "name" was not present in the query
             // string, and here we'll provide a default value
@@ -30,4 +32,3 @@ public class ViewColorServlet extends HttpServlet {
 //            request.getRequestDispatcher("/view-color.jsp").forward(request, response);
         }
     }
-}

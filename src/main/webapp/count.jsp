@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<h1>The current count is ${counter}</h1>
+<h1>The current count is <%= counter %></h1>
 
 View the page source!
 

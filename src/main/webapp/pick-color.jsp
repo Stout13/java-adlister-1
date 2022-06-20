@@ -15,14 +15,17 @@
 <%--        session.setAttribute("name", "color");--%>
 <%--    }--%>
 <%--%>--%>
-
+<% String color=request.getParameter("color");
+session.setAttribute("color", color);
+%>
 <html>
 <head>
     <title>iPick</title>
 </head>
 <body>
     <h1>PICK A COLOR</h1>
-    <form action = "/view-color.jsp" method = "POST">
+
+    <form action = "${pageContext.request.contextPath}/view-color" method="POST">
         Color: <input type = "text" name = "color">
         <input type = "submit" value = "Submit" />
     </form>
