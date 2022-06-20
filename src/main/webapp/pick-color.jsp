@@ -25,8 +25,10 @@ session.setAttribute("color", color);
 <body>
     <h1>PICK A COLOR</h1>
 
-    <form action = "${pageContext.request.contextPath}/view-color" method="POST">
-        Color: <input type = "text" name = "color">
+    <form action = "/view-color" method="POST">
+        <label> Color:
+            <input type = "text" name = "color" id="color">
+    </label>
         <input type = "submit" value = "Submit" />
     </form>
 </body>

@@ -8,15 +8,25 @@ public class ViewColorServlet extends HttpServlet {
 
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
-//        protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-//        session.getAttribute("color", color);
-//        request.getRequestDispatcher("/hello.jsp").forward(request, response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
+        String color = request.getParameter("color");
+        request.setAttribute("color", color);
+        request.getRequestDispatcher("view-color.jsp").forward(request, response);
 
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
+        String color = request.getParameter("color");
+        request.setAttribute("color", color);
+        request.getRequestDispatcher("view-color.jsp").forward(request, response);
+
+    }
+}
+
+//        protected void doPost(HttpServletRequest request, HttpServletResponse response) throws NullPointerException, ServletException, IOException {
+//            request.getRequestDispatcher("view-color.jsp").forward(request, response);
+//        }
 
 //        if (request.getMethod().equalsIgnoreCase("POST")) {
 //            request.getRequestDispatcher("/view-color.jsp").forward(request, response);
@@ -30,5 +40,3 @@ public class ViewColorServlet extends HttpServlet {
             // forward to the hello.jsp file
 //            request.setAttribute("color", color);
 //            request.getRequestDispatcher("/view-color.jsp").forward(request, response);
-        }
-    }

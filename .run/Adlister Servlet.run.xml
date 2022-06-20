@@ -1,6 +1,5 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Adlister Servlet" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" editBeforeRun="true" APPLICATION_SERVER_NAME="Tomcat 9.0.64" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="azul-11">
-    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/login.jsp" />
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
       <artifact name="java-adlister:war exploded">
@@ -13,11 +12,11 @@
       <option name="BASE_DIRECTORY_NAME" value="f4b9dc76-e70d-4af3-b3bd-e5a31f950b69" />
       <option name="HTTP_PORT" value="8081" />
     </server-settings>
+    <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+    <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+    <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
     <predefined_log_file enabled="true" id="Tomcat" />
     <predefined_log_file enabled="true" id="Tomcat Catalina" />
-    <predefined_log_file id="Tomcat Manager" />
-    <predefined_log_file id="Tomcat Host Manager" />
-    <predefined_log_file id="Tomcat Localhost Access" />
     <RunnerSettings RunnerId="Debug">
       <option name="DEBUG_PORT" value="59010" />
     </RunnerSettings>
