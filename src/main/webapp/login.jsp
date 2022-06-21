@@ -22,13 +22,7 @@
 <%--    }--%>
 <%--  }--%>
 <%--%>--%>
-<% if (request.getMethod().equalsIgnoreCase("POST")) {
-  String password = request.getParameter("password").toLowerCase(Locale.ROOT);
-  String username = request.getParameter("username");
-  if (username.equals("admin") && password.equals("password")) {
-    response.sendRedirect("/profile");
-  }
-  }
+<% 
     %>
 
 <html>
