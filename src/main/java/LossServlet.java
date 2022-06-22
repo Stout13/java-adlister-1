@@ -5,6 +5,6 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "GuessServlet", urlPatterns = "/guess")
-public class GuessServlet {
+public class LossServlet extends HttpServlet {
 
 }

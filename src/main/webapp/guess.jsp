@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Guessing Game</title>
 </head>
 <body>
+<form action = "../GuessServlet.java" method = "POST">
+    Guess a number, 1, 2, or 3: <input type = "text" name = "number" />
+    <input type = "submit" value = "Guess!" />
+</form>
 
 </body>
 </html>
