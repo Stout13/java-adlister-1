@@ -12,7 +12,6 @@ public class ViewColorServlet extends HttpServlet {
         String color = request.getParameter("color");
         request.setAttribute("color", color);
         request.getRequestDispatcher("view-color.jsp").forward(request, response);
-
     }
 
     @Override
@@ -20,7 +19,6 @@ public class ViewColorServlet extends HttpServlet {
         String color = request.getParameter("color");
         request.setAttribute("color", color);
         request.getRequestDispatcher("view-color.jsp").forward(request, response);
-
     }
 }
 
