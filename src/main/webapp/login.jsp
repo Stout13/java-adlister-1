@@ -22,8 +22,7 @@
 <%--    }--%>
 <%--  }--%>
 <%--%>--%>
-<% 
-    %>
+
 
 <html>
 <head>
@@ -35,14 +34,14 @@
   <%--    Login form from https://www.tutorialspoint.com/jsp/jsp_form_processing.htm--%>
 
   <h1>Login</h1>
-  <form action = "/login.jsp" method = "POST">
+  <form action = /login" method = "POST">
     User: <input type = "text" name = "username">
     <br />
     Password: <input type = "text" name = "password" />
     <input type = "submit" value = "Submit" />
   </form>
   <h1>Get Pizza</h1>
-  <form action = "/pizza-order.jsp" method = "POST">
+  <form action = "/pizza-order" method = "POST">
     User: <input type = "text" name = "username">
     <br />
     Password: <input type = "text" name = "password" />

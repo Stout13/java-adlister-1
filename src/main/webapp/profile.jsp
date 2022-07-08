@@ -10,8 +10,8 @@
 <%@ include file="index.jsp" %>
 <%@ page import="java.util.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%! int counter = 0; %>
-<% counter += 1; %>
+<%--<%! int counter = 0; %>--%>
+<%--<% counter += 1; %>--%>
 <!DOCTYPE html>
 <html lang="en" xmlns:display="http://www.w3.org/1999/xhtml">
 <head>

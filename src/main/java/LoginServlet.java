@@ -8,7 +8,7 @@ import java.util.Locale;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)  throws NullPointerException, ServletException, IOException {
-        request.getRequestDispatcher("/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/login").forward(request, response);
 
     }
 
