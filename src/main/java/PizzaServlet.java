@@ -3,7 +3,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/pizza-order")
+@WebServlet(urlPatterns = "/pizza-order")
 public class PizzaServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)  throws NullPointerException, ServletException, IOException {

@@ -4,7 +4,7 @@ import javax.servlet.http.*;
 
 import java.io.IOException;
 
-@WebServlet(name = "GuessServlet", urlPatterns = "/guess")
-public class GuessServlet {
-
-}
+//@WebServlet(name = "GuessServlet", urlPatterns = "/guess")
+//public class GuessServlet {
+//
+//}

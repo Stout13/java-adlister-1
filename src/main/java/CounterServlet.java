@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "CounterServlet", urlPatterns = "/count")
+@WebServlet(urlPatterns = "/count")
 public class CounterServlet extends HttpServlet {
     int counter = 0;
     @Override

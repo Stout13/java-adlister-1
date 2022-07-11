@@ -3,7 +3,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "ViewColorServlet", urlPatterns = "/view-color")
+@WebServlet(urlPatterns = "/view-color")
 public class ViewColorServlet extends HttpServlet {
 
 

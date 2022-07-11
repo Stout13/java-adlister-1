@@ -4,7 +4,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 
-@WebServlet(name = "PickColorServlet", urlPatterns = "/pick-color")
+@WebServlet(urlPatterns = "/pick-color")
 public class PickColorServlet extends HttpServlet {
 //    @Override
 //    protected void doGet(HttpServletRequest request, HttpServletResponse response)

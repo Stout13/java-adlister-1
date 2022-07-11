@@ -24,7 +24,7 @@
 <body>
 
 
-<h1>The current count is ${counter}</h1>
+<%--<h1>The current count is ${counter}</h1>--%>
 <%--<% request.setAttribute("counter", (request.getParameter("counter")+1));%>--%>
 View the page source!
 
