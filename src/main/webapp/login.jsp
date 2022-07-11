@@ -21,14 +21,7 @@
 <%--    }--%>
 <%--  }--%>
 <%--%>--%>
-<% if (request.getMethod().equalsIgnoreCase("POST")) {
-  String password = request.getParameter("password").toLowerCase(Locale.ROOT);
-  String username = request.getParameter("username");
-  if (username.equals("admin") && password.equals("password")) {
-    response.sendRedirect("/profile");
-  }
-  }
-    %>
+
 
 <html>
 <head>
@@ -40,7 +33,7 @@
   <%--    Login form from https://www.tutorialspoint.com/jsp/jsp_form_processing.htm--%>
 
   <h1>Login</h1>
-  <form action = "/login.jsp" method = "POST">
+  <form action = "login" method = "POST">
     User: <input type = "text" name = "username">
     <br />
     Password: <input type = "text" name = "password" />
