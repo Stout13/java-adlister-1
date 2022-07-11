@@ -7,9 +7,10 @@
   Time: 2:43 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
 <%@ include file="index.jsp" %>
-<%@ page import="java.util.*" %>
+<%--<%@ page import="java.util.*" %>--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--<%! int counter = (int) request.getParameter("counter");%>--%>
@@ -23,10 +24,12 @@
 </head>
 <body>
 
+<h1>This is the count ! ${counter}</h1>
+
 
 <%--<h1>The current count is ${counter}</h1>--%>
 <%--<% request.setAttribute("counter", (request.getParameter("counter")+1));%>--%>
-View the page source!
+
 
 <%-- this is a JSP comment, you will *not* see this in the html --%>
 
