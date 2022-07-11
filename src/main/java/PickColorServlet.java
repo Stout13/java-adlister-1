@@ -22,14 +22,6 @@ public class PickColorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.getRequestDispatcher("/pick-color.jsp").forward(request, response);
-//        String color = request.getParameter("color");
-        // if the name is null, it means that "name" was not present in the query
-        // string, and here we'll provide a default value
-
-
-        // pass the value of the name variable to the view, and send the request
-        // forward to the hello.jsp file
-//        request.setAttribute("name", "color");
 
     }
 }
